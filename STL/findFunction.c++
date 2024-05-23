@@ -7,12 +7,11 @@ int main() {
     int n = sizeof(arr) / sizeof(arr[0]);
     int key = 3;
 
-    int* ans = find(arr, arr + n, key);  // Use std::find with iterators
-
+    int* ans = find(arr, arr + n, key);  // Use std::find with iterator
     if (ans != arr + n) {
-        cout << "Element found at index: " << (ans - arr) << std::endl;
+        cout << "Element found at index: " << (ans - arr) << endl;
     } else {
-        cout << "Element not found" << std::endl;
+        cout << "Element not found" << endl;
     }
 
     return 0;
