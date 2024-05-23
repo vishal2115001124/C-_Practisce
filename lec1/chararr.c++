@@ -1,4 +1,5 @@
-#include <iostream>     
+#include <iostream>   
+#include <cstring>  
 using namespace std;
 
 void readLine(char a[],char delimitter){
@@ -39,9 +40,13 @@ int main(){
 
     char a[100] ;
 
-    readLine(a,'\n');
+    // readLine(a,'\n');
+
+    cin.getline(a,100,'$'); //HERE $ is delimitter
 
     cout<<a<<endl;
+
+    cout<< strlen(a)<<endl;
 
     // for(int i=0;a[i]!=0;i++){
     //     cout<<a[i]<<" ";
